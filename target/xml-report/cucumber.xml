@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.563" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="As a user, I want to reset app to reload the page to turn back default" name="As a user, I want to be able to revert the page its initial state with a resst link" time="9.337">
+<testsuite name="Cucumber" time="76.361" tests="6" skipped="0" failures="1" errors="0">
+<testcase classname="User should be able to add a product to the shopping cart and remove" name="User adds a product and removes" time="9.832">
+<system-out><![CDATA[
+Then user navigates to the URL..............................................passed
+When user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Then user adds a product and checks the difference in shopping cart.........passed
+When user checks the product is correctly added to the cart.................passed
+Then user removes the product and checks the difference in the cart.........passed
+When closes the app.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As regitered user, I should be able to access the website, then see the menu and the links in the menu can be visible and interactive" name="User can access the website and the links in the menu can be visible and active" time="10.85">
+<system-out><![CDATA[
+And user navigates to the URL...............................................passed
+Then user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+When user enters login button...............................................passed
+And user clicks the menu....................................................passed
+Then checks the links are visible and enabled...............................passed
+Given user clicks All Items and checks the url..............................passed
+Given user clicks About and checks the url..................................passed
+Then user clicks Logout and checks the url..................................passed
+Then clicks the reset app state and checks the url..........................passed
+When closes the app.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to reset app to reload the page to turn back default" name="As a user, I want to be able to revert the page its initial state with a resst link" time="7.935">
 <failure type="java.lang.AssertionError" message="Remove button is still here">
 <![CDATA[java.lang.AssertionError: Remove button is still here
 	at org.junit.Assert.fail(Assert.java:89)
@@ -20,6 +47,53 @@ When user clicks the menu...................................................pass
 Then user clicks on the reset app store.....................................passed
 When user checks the remove changed into add after reset....................failed
 Then closes the app.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and give an order" time="19.603">
+<system-out><![CDATA[
+When user navigates to the URL..............................................passed
+Then user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Then user adds products to cart.............................................passed
+Then user goes to cart......................................................passed
+And user clicks on the checkout button......................................passed
+Given user enters the necessary information and continues...................passed
+Then user checks the informations and products are added correctly..........passed
+Then user clicks on the finish button.......................................passed
+And user clicks on the back home button.....................................passed
+Then user verifies the homepage.............................................passed
+And closes the app..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and leave ordering" time="15.598">
+<system-out><![CDATA[
+When user navigates to the URL..............................................passed
+Then user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Then user adds products to cart.............................................passed
+Then user goes to cart......................................................passed
+And user clicks on the checkout button......................................passed
+Given user enters the necessary information and continues...................passed
+Then user checks the informations and products are added correctly..........passed
+Then user clicks on the cancel button.......................................passed
+And closes the app..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a registered user I want to access the social medias" name="I can access the social medias and the links should navigate to the correct address" time="12.407">
+<system-out><![CDATA[
+Then user navigates to the URL..............................................passed
+When user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Given user clicks on the facebook icon......................................passed
+Given user verifies the url includes "facebook".............................passed
+When user clicks on the twitter icon........................................passed
+Given user verifies the url includes "twitter"..............................passed
+When user clicks on the linkedin icon.......................................passed
+Given user verifies the url includes "linkedin".............................passed
+Then quits the app..........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

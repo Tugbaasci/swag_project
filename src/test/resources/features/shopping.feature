@@ -1,4 +1,4 @@
-
+@wip
 Feature: User should be able to do shopping
 
   Scenario: As a user I can buy product(s) and give an order
