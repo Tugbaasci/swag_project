@@ -1,0 +1,29 @@
+US_001: As a user, I can search a product, add it to the cart and delete it.
+Launch browser
+Navigate to url 'https://www.amazon.de/'
+Close delivery address changing panel
+Close cookies
+Click on the search bar
+Type "iphone 15" into the search bar
+Record the product name
+Click on the first product
+Add the product to the cart
+Continue to click to the basket
+Check whether the title of the first product matches the title of the product added to the cart
+Delete the product from the cart
+Check that the product is deleted from the cart
+Close the page
+
+US_002: As a user, I can turn back Homepage, when I click on the logo.
+Launch browser
+Navigate to url 'https://www.amazon.de/'
+Close delivery address changing panel
+Close cookies
+Get the window handle of the page
+Click on the Best Seller link
+Click on the logo
+Check the browser to go to homepage when clicking on the logo
+Close the page
+
+US_003 As a user
+
