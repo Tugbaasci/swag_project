@@ -1,5 +1,5 @@
 Feature: As a user, I want to reset app to reload the page to turn back default
-  @wip
+
   Scenario: As a user, I want to be able to revert the page its initial state with a reset link
     And user navigates to the URL
     When user enters username to login
