@@ -1,5 +1,5 @@
-Feature: As regitered user, I should be able to access the website, then see the menu and the links in the menu can be visible and interactive
-@wip
+Feature: As a regitered user, I should be able to access the website, then see the menu and the links in the menu can be visible and interactive
+
   Scenario: User can access the website and the links in the menu can be visible and active
     And user navigates to the URL
     Then user enters username to login

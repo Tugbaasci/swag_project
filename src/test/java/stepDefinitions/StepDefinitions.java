@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
@@ -219,7 +220,7 @@ public class StepDefinitions {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(string));
         Driver.getDriver().close();
         Driver.getDriver().switchTo().window(fWh);
-
+        ReusableMethods.wait(3);
     }
     @When("user clicks on the twitter icon")
     public void user_clicks_on_the_twitter_icon() {
@@ -250,7 +251,6 @@ public class StepDefinitions {
     }
     @When("user checks the remove changed into add after reset")
     public void user_checks_the_remove_changed_into_add_after_reset() {
-      Assert.assertFalse("Remove button is still here",page.firstProductRemoveBtn.isDisplayed());
+        Assert.assertTrue(!page.firstProductRemoveBtn.isDisplayed());
     }
-
 }

@@ -1,11 +1,13 @@
-@wip
-Feature: User should be able to do shopping
 
-  Scenario: As a user I can buy product(s) and give an order
+Feature: User should be able to do shopping
+  Background:
     When user navigates to the URL
     Then user enters username to login
     Then user enters password to login
     And user enters login button
+
+  Scenario: As a user I can buy product(s) and give an order
+
     Then user adds products to cart
     Then user goes to cart
     And user clicks on the checkout button
@@ -17,10 +19,7 @@ Feature: User should be able to do shopping
     And closes the app
 
   Scenario: As a user I can buy product(s) and leave ordering
-    When user navigates to the URL
-    Then user enters username to login
-    Then user enters password to login
-    And user enters login button
+
     Then user adds products to cart
     Then user goes to cart
     And user clicks on the checkout button

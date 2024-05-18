@@ -71,6 +71,6 @@ public class HomePage {
     public WebElement twitterIcon;
     @FindBy(xpath = "//li[@class='social_linkedin']")
     public WebElement linkedinIcon;
-
-
+    @FindBy(xpath = "//div[@class='app_logo']")
+    public WebElement HeaderHomePage;
 }
