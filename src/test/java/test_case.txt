@@ -1,2 +1,142 @@
+US_01: As a user, I want to be able to shop online
+
+TC_01: User Can Purchase Products and Place an Order
+
+     Preconditions:
+
+     The user navigates to the URL.
+     The user enters their username to log in.
+     The user enters their password to log in.
+     The user clicks the login button.
+
+     Test Steps:
+
+     The user adds products to the cart.
+     The user goes to the cart.
+     The user clicks the checkout button.
+     The user enters the necessary information and continues.
+     The user verifies that the information and products are correctly added.
+     The user clicks the finish button.
+     The user clicks the back home button.
+     The user verifies the homepage.
+     The user closes the app.
+
+     Expected Result:
+
+     The user successfully purchases the products and completes the order.
+     The user verifies the homepage and closes the app.
+
+TC_02: User Can Purchase Products and Cancel the Order
+
+     Steps:
+
+     The user adds products to the cart.
+     The user goes to the cart.
+     The user clicks the checkout button.
+     The user enters the necessary information and continues.
+     The user verifies that the information and products are correctly added.
+     The user clicks the cancel button.
+     The user closes the app.
+     Expected Result:
+
+     The user adds products to the cart but cancels the order.
+     The user closes the app.
+
+US_02: As a registered user, I should be able to access the website,
+then see the menu and the links in the menu can be visible and interactive
+
+TC_03: User can access the website and the links in the menu can be visible and active
+
+    Steps:
+
+    The user navigates to the URL.
+    The user enters their username to log in.
+    The user enters their password to log in.
+    The user clicks the login button.
+    The user clicks the menu.
+    The user checks that the links are visible and enabled.
+    The user clicks "All Items" and checks the URL.
+    The user clicks "About" and checks the URL.
+    The user clicks "Logout" and checks the URL.
+    The user clicks "Reset App State" and checks the URL.
+    The user closes the app.
+
+    Expected Result:
+
+    The user successfully logs in and accesses the menu.
+    The links in the menu are visible and enabled.
+    The URLs for "All Items," "About," "Logout," and "Reset App State" are correct.
+    The user closes the app successfully.
+
+US_03:As a user, I want to be able to add a product to the shopping cart and remove it
+
+TC_04:User can add a product to the shopping cart and remove it.
+
+    Steps:
+
+    The user navigates to the URL.
+    The user enters their username to log in.
+    The user enters their password to log in.
+    The user clicks the login button.
+    The user adds a product and checks the difference in the shopping cart.
+    The user verifies that the product is correctly added to the cart.
+    The user removes the product and checks the difference in the cart.
+    The user closes the app.
+
+    Expected Result:
+
+    The product is successfully added to the shopping cart.
+    The cart reflects the addition of the product.
+    The product is successfully removed from the shopping cart.
+    The cart reflects the removal of the product.
+    The user closes the app successfully.
+
+US_04:As a registered user, I want to access social media links
+
+TC_05:User can access soyial media links and navigate to correct addresses
+
+    Steps:
+
+    The user navigates to the URL.
+    The user enters their username to log in.
+    The user enters their password to log in.
+    The user clicks the login button.
+    The user clicks on the Facebook icon.
+    The user verifies the URL includes "facebook".
+    The user clicks on the X icon.
+    The user verifies the URL includes "x".
+    The user clicks on the LinkedIn icon.
+    The user verifies the URL includes "linkedin".
+    The user quits the app.
+
+    Expected Result:
+
+    The user successfully navigates to the Facebook page and the URL includes "facebook".
+    The user successfully navigates to the X page and the URL includes "x".
+    The user successfully navigates to the LinkedIn page and the URL includes "linkedin".
+    The user quits the app successfully.
+
+US_05: As a user, I want to reset the app to reload the page to its default state
+
+TC_06:User can reset the app to reload the page to default state
+
+    Steps:
+
+    The user navigates to the URL.
+    The user enters their username to log in.
+    The user enters their password to log in.
+    The user clicks the login button.
+    The user adds a product.
+    The user clicks the menu.
+    The user clicks on the reset app store.
+    The user checks that "remove" has changed to "add" after the reset.
+    The user closes the app.
+
+    Expected Result:
+
+    The product is added to the cart.
+    The app resets successfully, changing "remove" to "add".
+    The user closes the app successfully.
+
 
 

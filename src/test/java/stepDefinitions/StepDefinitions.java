@@ -209,21 +209,21 @@ public class StepDefinitions {
     }
     @Given("user verifies the url includes {string}")
     public void user_verifies_the_url_includes(String string) {
-        String sWhFacebook = "";
+        String sWh = "";
         Set<String> wHList = Driver.getDriver().getWindowHandles();
         for (String each:wHList) {
             if (!each.equals(fWh)){
-                sWhFacebook = each;
+                sWh = each;
             }
         }
-        Driver.getDriver().switchTo().window(sWhFacebook);
+        Driver.getDriver().switchTo().window(sWh);
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(string));
         Driver.getDriver().close();
         Driver.getDriver().switchTo().window(fWh);
-        ReusableMethods.wait(3);
+        ReusableMethods.wait(2);
     }
-    @When("user clicks on the twitter icon")
-    public void user_clicks_on_the_twitter_icon() {
+    @When("user clicks on the x icon")
+    public void user_clicks_on_the_x_icon() {
         actions = new Actions(Driver.getDriver());
         actions.scrollToElement(page.twitterIcon).perform();
         page.twitterIcon.click();
