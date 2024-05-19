@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.793" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="As a user, I want to reset app to reload the page to turn back default" name="As a user, I want to be able to revert the page its initial state with a reset link" time="8.665">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.StepDefinitions.user_checks_the_remove_changed_into_add_after_reset(StepDefinitions.java:254)
-	at ✽.user checks the remove changed into add after reset(file:///C:/Users/41768/IdeaProjects/swagProject/src/test/resources/features/resetApp.feature:11)
-]]>
-</failure>
+<testsuite name="Cucumber" time="21.196" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="As a registered user I want to access the social medias" name="I can access the social medias and the links should navigate to the correct address" time="21.024">
 <system-out><![CDATA[
-And user navigates to the URL...............................................passed
+Then user navigates to the URL..............................................passed
 When user enters username to login..........................................passed
 Then user enters password to login..........................................passed
 And user enters login button................................................passed
-Then user adds a product....................................................passed
-When user clicks the menu...................................................passed
-Then user clicks on the reset app store.....................................passed
-When user checks the remove changed into add after reset....................failed
-Then closes the app.........................................................skipped
+Given user clicks on the facebook icon......................................passed
+Given user verifies the url includes "facebook".............................passed
+When user clicks on the x icon..............................................passed
+Given user verifies the url includes "x"....................................passed
+When user clicks on the linkedin icon.......................................passed
+Given user verifies the url includes "linkedin".............................passed
+Then quits the app..........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
