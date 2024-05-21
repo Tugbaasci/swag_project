@@ -244,8 +244,8 @@ public class StepDefinitions {
         page.firstproductAddCartBtn.click();
         ReusableMethods.takePhotoAllpage("AddedCart");
     }
-    @Then("user clicks on the reset app store")
-    public void user_clicks_on_the_reset_app_store() {
+    @Then("user clicks on the reset app state")
+    public void user_clicks_on_the_reset_app_state() {
        page.resetAppStoreLink.click();
        ReusableMethods.takePhotoAllpage("DeletedCart");
     }
@@ -253,4 +253,6 @@ public class StepDefinitions {
     public void user_checks_the_remove_changed_into_add_after_reset() {
         Assert.assertTrue(!page.firstProductRemoveBtn.isDisplayed());
     }
+
+
 }
