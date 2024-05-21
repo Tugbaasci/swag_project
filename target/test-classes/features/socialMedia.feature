@@ -1,5 +1,5 @@
 Feature: As a registered user I want to access the social medias
-@wip
+
   Scenario: I can access the social medias and the links should navigate to the correct address
     Then user navigates to the URL
     When user enters username to login
