@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="10.564" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="As a user, I want to reset app to reload the page to turn back default" name="As a user, I want to be able to revert the page its initial state with a reset link" time="10.252">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.StepDefinitions.user_checks_the_remove_changed_into_add_after_reset(StepDefinitions.java:254)
+	at ✽.user checks the remove changed into add after reset(file:///C:/Users/41768/IdeaProjects/swagProject/src/test/resources/features/resetApp.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+And user navigates to the URL...............................................passed
+When user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Then user adds a product....................................................passed
+When user clicks the menu...................................................passed
+Then user clicks on the reset app state.....................................passed
+When user checks the remove changed into add after reset....................failed
+Then closes the app.........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

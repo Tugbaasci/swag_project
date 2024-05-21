@@ -1,4 +1,4 @@
-
+@wip
 Feature: User should be able to do shopping
   Background:
     When user navigates to the URL
