@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.408">
-    <testcase classname="As a registered user I want to access the social medias" name="I can access the social medias and the links should navigate to the correct address" time="23.151">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.998">
+    <testcase classname="As a registered user I want to access the social medias" name="I can access the social medias and the links should navigate to the correct address" time="23.629">
         <system-out><![CDATA[Then user navigates to the URL..............................................passed
 When user enters username to login..........................................passed
 Then user enters password to login..........................................passed
