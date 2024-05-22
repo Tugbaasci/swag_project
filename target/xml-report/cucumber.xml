@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="39.333">
-    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and give an order" time="22.392">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="39.739">
+    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and give an order" time="22.939">
         <system-out><![CDATA[When user navigates to the URL..............................................passed
 Then user enters username to login..........................................passed
 Then user enters password to login..........................................passed
@@ -16,7 +16,7 @@ Then user verifies the homepage.............................................pass
 And closes the app..........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and leave ordering" time="16.668">
+    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and leave ordering" time="16.501">
         <system-out><![CDATA[When user navigates to the URL..............................................passed
 Then user enters username to login..........................................passed
 Then user enters password to login..........................................passed
