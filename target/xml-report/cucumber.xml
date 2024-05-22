@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="39.807">
-    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and give an order" time="22.887">
-        <system-out><![CDATA[When user navigates to the URL..............................................passed
-Then user enters username to login..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.501">
+    <testcase classname="As a registered user I want to access the social medias" name="I can access the social medias and the links should navigate to the correct address" time="21.329">
+        <system-out><![CDATA[Then user navigates to the URL..............................................passed
+When user enters username to login..........................................passed
 Then user enters password to login..........................................passed
 And user enters login button................................................passed
-Then user adds products to cart.............................................passed
-Then user goes to cart......................................................passed
-And user clicks on the checkout button......................................passed
-Given user enters the necessary information and continues...................passed
-Then user checks the informations and products are added correctly..........passed
-Then user clicks on the finish button.......................................passed
-And user clicks on the back home button.....................................passed
-Then user verifies the homepage.............................................passed
-And closes the app..........................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and leave ordering" time="16.631">
-        <system-out><![CDATA[When user navigates to the URL..............................................passed
-Then user enters username to login..........................................passed
-Then user enters password to login..........................................passed
-And user enters login button................................................passed
-Then user adds products to cart.............................................passed
-Then user goes to cart......................................................passed
-And user clicks on the checkout button......................................passed
-Given user enters the necessary information and continues...................passed
-Then user checks the informations and products are added correctly..........passed
-Then user clicks on the cancel button.......................................passed
-And closes the app..........................................................passed
+Given user clicks on the facebook icon......................................passed
+Given user verifies the url includes "facebook".............................passed
+When user clicks on the x icon..............................................passed
+Given user verifies the url includes "x"....................................passed
+When user clicks on the linkedin icon.......................................passed
+Given user verifies the url includes "linkedin".............................passed
+Then quits the app..........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
