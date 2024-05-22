@@ -73,4 +73,5 @@ public class HomePage {
     public WebElement linkedinIcon;
     @FindBy(xpath = "//div[@class='app_logo']")
     public WebElement HeaderHomePage;
+    //just for checking
 }
