@@ -115,6 +115,9 @@
                         <include>**/*Tests.java</include>
                         <include>**/*Runner.java</include>
                     </includes>
+                    <systemPropertyVariables>
+                        <cucumber.options>--plugin json:target/cucumber-reports/Cucumber.json</cucumber.options>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
             <plugin>
