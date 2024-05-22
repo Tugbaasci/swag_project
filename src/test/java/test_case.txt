@@ -128,7 +128,7 @@ TC_06:User can reset the app to reload the page to default state
     The user clicks the login button.
     The user adds a product.
     The user clicks the menu.
-    The user clicks on the reset app store.
+    The user clicks on the reset app state.
     The user checks that "remove" has changed to "add" after the reset.
     The user closes the app.
 

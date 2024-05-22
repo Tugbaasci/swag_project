@@ -1,25 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.564" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="As a user, I want to reset app to reload the page to turn back default" name="As a user, I want to be able to revert the page its initial state with a reset link" time="10.252">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepDefinitions.StepDefinitions.user_checks_the_remove_changed_into_add_after_reset(StepDefinitions.java:254)
-	at ✽.user checks the remove changed into add after reset(file:///C:/Users/41768/IdeaProjects/swagProject/src/test/resources/features/resetApp.feature:11)
-]]>
-</failure>
-<system-out><![CDATA[
-And user navigates to the URL...............................................passed
-When user enters username to login..........................................passed
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="41.019">
+    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and give an order" time="23.958">
+        <system-out><![CDATA[When user navigates to the URL..............................................passed
+Then user enters username to login..........................................passed
 Then user enters password to login..........................................passed
 And user enters login button................................................passed
-Then user adds a product....................................................passed
-When user clicks the menu...................................................passed
-Then user clicks on the reset app state.....................................passed
-When user checks the remove changed into add after reset....................failed
-Then closes the app.........................................................skipped
+Then user adds products to cart.............................................passed
+Then user goes to cart......................................................passed
+And user clicks on the checkout button......................................passed
+Given user enters the necessary information and continues...................passed
+Then user checks the informations and products are added correctly..........passed
+Then user clicks on the finish button.......................................passed
+And user clicks on the back home button.....................................passed
+Then user verifies the homepage.............................................passed
+And closes the app..........................................................passed
 ]]></system-out>
-</testcase>
+    </testcase>
+    <testcase classname="User should be able to do shopping" name="As a user I can buy product(s) and leave ordering" time="16.705">
+        <system-out><![CDATA[When user navigates to the URL..............................................passed
+Then user enters username to login..........................................passed
+Then user enters password to login..........................................passed
+And user enters login button................................................passed
+Then user adds products to cart.............................................passed
+Then user goes to cart......................................................passed
+And user clicks on the checkout button......................................passed
+Given user enters the necessary information and continues...................passed
+Then user checks the informations and products are added correctly..........passed
+Then user clicks on the cancel button.......................................passed
+And closes the app..........................................................passed
+]]></system-out>
+    </testcase>
 </testsuite>
