@@ -1,5 +1,5 @@
 Feature: User should be able to add a product to the shopping cart and remove
-
+@addremove
   Scenario: User adds a product and removes
     Then user navigates to the URL
     When user enters username to login
